@@ -6,3 +6,4 @@ Scenario: Login validation using valid credentials
 	And I enter username "Admin"
 	Then I enter password "admin123"
 	And click on login button
+

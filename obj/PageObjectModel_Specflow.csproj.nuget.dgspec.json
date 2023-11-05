@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\acer\\source\\repos\\PageObjectModel_Specflow\\PageObjectModel_Specflow\\PageObjectModel_Specflow.csproj": {}
+    "E:\\VinStudy\\UiRepo\\SpecflowBDD\\PageObjectModel_Specflow.csproj": {}
   },
   "projects": {
-    "C:\\Users\\acer\\source\\repos\\PageObjectModel_Specflow\\PageObjectModel_Specflow\\PageObjectModel_Specflow.csproj": {
+    "E:\\VinStudy\\UiRepo\\SpecflowBDD\\PageObjectModel_Specflow.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\acer\\source\\repos\\PageObjectModel_Specflow\\PageObjectModel_Specflow\\PageObjectModel_Specflow.csproj",
+        "projectUniqueName": "E:\\VinStudy\\UiRepo\\SpecflowBDD\\PageObjectModel_Specflow.csproj",
         "projectName": "PageObjectModel_Specflow",
-        "projectPath": "C:\\Users\\acer\\source\\repos\\PageObjectModel_Specflow\\PageObjectModel_Specflow\\PageObjectModel_Specflow.csproj",
-        "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\acer\\source\\repos\\PageObjectModel_Specflow\\PageObjectModel_Specflow\\obj\\",
+        "projectPath": "E:\\VinStudy\\UiRepo\\SpecflowBDD\\PageObjectModel_Specflow.csproj",
+        "packagesPath": "C:\\Users\\Pooja Naik\\.nuget\\packages\\",
+        "outputPath": "E:\\VinStudy\\UiRepo\\SpecflowBDD\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Pooja Naik\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,17 +40,45 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "DotNetSeleniumExtras.PageObjects.Core": {
+              "target": "Package",
+              "version": "[4.14.1, )"
+            },
             "FluentAssertions": {
               "target": "Package",
-              "version": "[6.2.0, )"
+              "version": "[6.12.0, )"
+            },
+            "Gherkin": {
+              "target": "Package",
+              "version": "[27.0.0, )"
             },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.0.0, )"
             },
+            "Microsoft.Web.WebView2.DevToolsProtocolExtension": {
+              "target": "Package",
+              "version": "[1.0.824, )"
+            },
+            "NBuilder": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
+            "NLog": {
+              "target": "Package",
+              "version": "[5.2.5, )"
+            },
+            "NLog.Schema": {
+              "target": "Package",
+              "version": "[5.2.5, )"
+            },
             "NUnit3TestAdapter": {
               "target": "Package",
-              "version": "[4.1.0, )"
+              "version": "[4.5.0, )"
+            },
+            "OpenQA.Selenium.Chrome.ChromeDriverExtensions": {
+              "target": "Package",
+              "version": "[1.2.0, )"
             },
             "RestSharp": {
               "target": "Package",
@@ -60,17 +88,25 @@
               "target": "Package",
               "version": "[4.14.1, )"
             },
+            "SpecFlow": {
+              "target": "Package",
+              "version": "[3.9.74, )"
+            },
+            "SpecFlow.Assist.Dynamic": {
+              "target": "Package",
+              "version": "[1.4.2, )"
+            },
             "SpecFlow.NUnit": {
               "target": "Package",
-              "version": "[3.9.40, )"
+              "version": "[3.9.74, )"
             },
             "SpecFlow.Plus.LivingDocPlugin": {
               "target": "Package",
               "version": "[3.9.57, )"
             },
-            "nunit": {
+            "WebDriverManager": {
               "target": "Package",
-              "version": "[3.13.2, )"
+              "version": "[2.17.1, )"
             }
           },
           "imports": [
@@ -89,7 +125,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -5,10 +5,10 @@ Scenario Outline: Add two numbers data-driven test cases using Scenario Outline
 	Given the first number is <firstnumber>
 	And the second number is <secondnumber>
 	When the two numbers are added
-	Then the result should be <result>
+	Then result should be <result>
 Examples: 
-    | firstnumber |secondnumber  |result  |
-	| 10 |20  |30  |
-    | 20 |30  |50  |
-    | 40 |50  |90  |
-	| 1  |1   |2   |
+    | firstnumber | secondnumber | r.esult |
+    | 10          | 20           | 30      |
+    | 20          | 30           | 50      |
+    | 40          | 50           | 90      |
+    | 1           | 1            | 2       |

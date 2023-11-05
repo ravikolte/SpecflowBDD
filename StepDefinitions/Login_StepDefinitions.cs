@@ -17,11 +17,13 @@ namespace PageObjectModel_Specflow.StepDefinitions
             this.driver = driver;
             loginPage = new LoginPage(driver);
         }
-        [Given(@"Given I am on the login page")]
-        public void GivenGivenIAmOnTheLoginPage()
+       
+        [Given(@"I navigate to OrangeHRM")]
+        public void GivenINavigateToOrangeHRM()
         {
             driver.Navigate().GoToUrl(FrameworkConstants.WebUrl);
         }
+
 
         [Given(@"I enter username ""([^""]*)""")]
         public void GivenIEnterUsername(string admin)
