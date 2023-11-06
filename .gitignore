@@ -1,9 +1,9 @@
 .vs
 .vscode
 bin
-obj
 .DS_Store
 out
 PageObjectModel_Specflow.sln
 SpecFlow/
 SpecflowBDD-1.sln
+pecflowBDD-1/obj

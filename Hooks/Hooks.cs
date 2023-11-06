@@ -35,7 +35,7 @@ namespace PageObjectModel_Specflow.Hooks
                 {
                     Console.WriteLine("Running before scenario...");
                     
-                    IWebDriver driver = new ChromeDriver("/opt/homebrew/bin/chromedriver");
+                    IWebDriver driver = new ChromeDriver();
                     driver.Manage().Window.Maximize();
                     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
 
