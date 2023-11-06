@@ -35,6 +35,7 @@ namespace PageObjectModel_Specflow.Pages
         public LoginPage click_login_button()
         {
             driver.FindElement(login_btn).Click();
+            Console.WriteLine("Clicking on Admin");
             return new LoginPage(driver);
         }
     }

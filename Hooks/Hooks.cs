@@ -34,7 +34,8 @@ namespace PageObjectModel_Specflow.Hooks
                 if (!tag.Contains("nonui") || tag.Equals(string.Empty))
                 {
                     Console.WriteLine("Running before scenario...");
-                    IWebDriver driver = new ChromeDriver();
+                    
+                    IWebDriver driver = new ChromeDriver("/opt/homebrew/bin/chromedriver");
                     driver.Manage().Window.Maximize();
                     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
 

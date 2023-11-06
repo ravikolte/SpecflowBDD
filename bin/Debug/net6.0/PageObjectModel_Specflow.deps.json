@@ -8,11 +8,15 @@
     ".NETCoreApp,Version=v6.0": {
       "PageObjectModel_Specflow/1.0.0": {
         "dependencies": {
+          "Cucumber.Messages": "21.0.1",
           "FluentAssertions": "6.2.0",
+          "Gherkin": "27.0.0",
           "Microsoft.NET.Test.Sdk": "17.0.0",
           "NUnit3TestAdapter": "4.1.0",
           "RestSharp": "110.2.0",
-          "Selenium.WebDriver": "4.14.1",
+          "Selenium.Support": "4.14.0",
+          "Selenium.WebDriver": "4.14.0",
+          "SpecFlow": "3.9.74",
           "SpecFlow.NUnit": "3.9.40",
           "SpecFlow.Plus.LivingDocPlugin": "3.9.57",
           "NUnit": "3.13.2"
@@ -29,6 +33,17 @@
           }
         }
       },
+      "Cucumber.Messages/21.0.1": {
+        "dependencies": {
+          "Google.Protobuf": "3.21.12"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Cucumber.Messages.dll": {
+            "assemblyVersion": "21.0.1.0",
+            "fileVersion": "21.0.1.0"
+          }
+        }
+      },
       "FluentAssertions/6.2.0": {
         "dependencies": {
           "System.Configuration.ConfigurationManager": "4.5.0"
@@ -40,11 +55,19 @@
           }
         }
       },
-      "Gherkin/19.0.3": {
+      "Gherkin/27.0.0": {
         "runtime": {
-          "lib/netstandard2.0/Gherkin.dll": {
-            "assemblyVersion": "19.0.3.0",
-            "fileVersion": "19.0.3.0"
+          "lib/net6.0/Gherkin.dll": {
+            "assemblyVersion": "27.0.0.0",
+            "fileVersion": "27.0.0.0"
+          }
+        }
+      },
+      "Google.Protobuf/3.21.12": {
+        "runtime": {
+          "lib/net5.0/Google.Protobuf.dll": {
+            "assemblyVersion": "3.21.12.0",
+            "fileVersion": "3.21.12.0"
           }
         }
       },
@@ -446,7 +469,18 @@
       "runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {},
       "runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {},
       "runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {},
-      "Selenium.WebDriver/4.14.1": {
+      "Selenium.Support/4.14.0": {
+        "dependencies": {
+          "Selenium.WebDriver": "4.14.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
+          }
+        }
+      },
+      "Selenium.WebDriver/4.14.0": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
           "System.Drawing.Common": "7.0.0"
@@ -458,10 +492,10 @@
           }
         }
       },
-      "SpecFlow/3.9.40": {
+      "SpecFlow/3.9.74": {
         "dependencies": {
           "BoDi": "1.5.0",
-          "Gherkin": "19.0.3",
+          "Gherkin": "27.0.0",
           "Microsoft.Extensions.DependencyModel": "1.0.3",
           "SpecFlow.Internal.Json": "1.0.8",
           "System.Configuration.ConfigurationManager": "4.5.0",
@@ -471,7 +505,7 @@
         "runtime": {
           "lib/netstandard2.0/TechTalk.SpecFlow.dll": {
             "assemblyVersion": "3.9.0.0",
-            "fileVersion": "3.9.40.46609"
+            "fileVersion": "3.9.74.14555"
           }
         }
       },
@@ -486,7 +520,7 @@
       "SpecFlow.NUnit/3.9.40": {
         "dependencies": {
           "NUnit": "3.13.2",
-          "SpecFlow": "3.9.40",
+          "SpecFlow": "3.9.74",
           "SpecFlow.Tools.MsBuild.Generation": "3.9.40"
         },
         "runtime": {
@@ -498,7 +532,7 @@
       },
       "SpecFlow.Plus.LivingDocPlugin/3.9.57": {
         "dependencies": {
-          "SpecFlow": "3.9.40",
+          "SpecFlow": "3.9.74",
           "SpecFlow.Internal.Json": "1.0.8",
           "SpecFlow.Tools.MsBuild.Generation": "3.9.40"
         },
@@ -515,7 +549,7 @@
       },
       "SpecFlow.Tools.MsBuild.Generation/3.9.40": {
         "dependencies": {
-          "SpecFlow": "3.9.40"
+          "SpecFlow": "3.9.74"
         }
       },
       "System.AppContext/4.1.0": {
@@ -1093,6 +1127,13 @@
       "path": "bodi/1.5.0",
       "hashPath": "bodi.1.5.0.nupkg.sha512"
     },
+    "Cucumber.Messages/21.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LLiXf+szR4rK3b5SPp3K8e0yGDL///LMTvTygfIQqzgV1NU4DesJ1/vrMbN6TmtzSLJDD6IXFQ9iuzY1whIQeg==",
+      "path": "cucumber.messages/21.0.1",
+      "hashPath": "cucumber.messages.21.0.1.nupkg.sha512"
+    },
     "FluentAssertions/6.2.0": {
       "type": "package",
       "serviceable": true,
@@ -1100,12 +1141,19 @@
       "path": "fluentassertions/6.2.0",
       "hashPath": "fluentassertions.6.2.0.nupkg.sha512"
     },
-    "Gherkin/19.0.3": {
+    "Gherkin/27.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-kq9feqMojMj9aABrHb/ABEPaH2Y4dSclseSahAru6qxCeqVQNLLTgw/6vZMauzI1yBUL2fz03ub5yEd5btLfvg==",
-      "path": "gherkin/19.0.3",
-      "hashPath": "gherkin.19.0.3.nupkg.sha512"
+      "sha512": "sha512-nIEmeK1iJ69l/c1wttIuNnVi1lgZ3FyJXTVhzVPtzdfn/zqf2vZVEk8tE2P09O1SHTp3xZ5kvDxk9sM++EsyhQ==",
+      "path": "gherkin/27.0.0",
+      "hashPath": "gherkin.27.0.0.nupkg.sha512"
+    },
+    "Google.Protobuf/3.21.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1TXWxQy0PDDM1NC/LojlX4YVh7NhOvvyriCfERzeUVTp0XNXv8mo/AyWxDYCvMQ9xRZHUVdWoE4/B8ridP8Btg==",
+      "path": "google.protobuf/3.21.12",
+      "hashPath": "google.protobuf.3.21.12.nupkg.sha512"
     },
     "Microsoft.CodeCoverage/17.0.0": {
       "type": "package",
@@ -1317,19 +1365,26 @@
       "path": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl/4.3.2",
       "hashPath": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512"
     },
-    "Selenium.WebDriver/4.14.1": {
+    "Selenium.Support/4.14.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-9gmtnYWDyscnVPdDZ1dMI8SikKLcrsS+GNweZVKMWxcUsagHOdQnX1yAA22KeTWbRubwp5Vw/E6NF/6drzaTbA==",
-      "path": "selenium.webdriver/4.14.1",
-      "hashPath": "selenium.webdriver.4.14.1.nupkg.sha512"
+      "sha512": "sha512-Ix4QvIsavMH5O0+hwQ1eow9a/KxCLvPyQTigLLUU0UP7GVUXG4K4uzIIUfTsvqBcc9eW3MMffRz8d72iHodAgA==",
+      "path": "selenium.support/4.14.0",
+      "hashPath": "selenium.support.4.14.0.nupkg.sha512"
     },
-    "SpecFlow/3.9.40": {
+    "Selenium.WebDriver/4.14.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ru7twstJSKrTv3XfcxyttzrdZ/FvXOF5cYN/x/2js755wVk1zpSPUPa/ml3lSZmPNkS5OAOuSt1JLEa5hhDhdw==",
-      "path": "specflow/3.9.40",
-      "hashPath": "specflow.3.9.40.nupkg.sha512"
+      "sha512": "sha512-TQ1JCHdxuac9l4r7yehgvt+5tj6kY5RSfi3RhkEPi/uCp9g/HW1J8CBOOzAu8p5T0ERJbNrGEqYOJu13leZI9Q==",
+      "path": "selenium.webdriver/4.14.0",
+      "hashPath": "selenium.webdriver.4.14.0.nupkg.sha512"
+    },
+    "SpecFlow/3.9.74": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-n6kcg9ZeQWxqJFoT23SsFT89U1QQNwvcN9pAX5alB6ZPr6K0p5D5nGIJ1PZsSaFaRFutiwQ+DicmxBCPAZVYIA==",
+      "path": "specflow/3.9.74",
+      "hashPath": "specflow.3.9.74.nupkg.sha512"
     },
     "SpecFlow.Internal.Json/1.0.8": {
       "type": "package",

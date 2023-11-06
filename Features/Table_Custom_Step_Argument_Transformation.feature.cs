@@ -102,17 +102,17 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
                             "Ravi",
                             "rk@cybtest.com"});
-                table1.AddRow(new string[] {
+                table5.AddRow(new string[] {
                             "Tushar",
                             "td@cybtest.com"});
-                table1.AddRow(new string[] {
+                table5.AddRow(new string[] {
                             "Datta",
                             "dp@cybtest.com"});
 #line 6
-    testRunner.Given("Fill the data", ((string)(null)), table1, "Given ");
+    testRunner.Given("Fill the data", ((string)(null)), table5, "Given ");
 #line hidden
             }
             this.ScenarioCleanup();

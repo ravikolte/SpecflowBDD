@@ -18,6 +18,22 @@
           "build/_._": {}
         }
       },
+      "Cucumber.Messages/21.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Google.Protobuf": "3.21.12"
+        },
+        "compile": {
+          "lib/netstandard2.0/Cucumber.Messages.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Cucumber.Messages.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "FluentAssertions/6.2.0": {
         "type": "package",
         "dependencies": {
@@ -34,16 +50,29 @@
           }
         }
       },
-      "Gherkin/19.0.3": {
+      "Gherkin/27.0.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Gherkin.dll": {
+          "lib/net6.0/Gherkin.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/Gherkin.dll": {
+          "lib/net6.0/Gherkin.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "Google.Protobuf/3.21.12": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/Google.Protobuf.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/Google.Protobuf.dll": {
+            "related": ".pdb;.xml"
           }
         }
       },
@@ -645,7 +674,23 @@
           }
         }
       },
-      "Selenium.WebDriver/4.14.1": {
+      "Selenium.Support/4.14.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.14.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Selenium.WebDriver/4.14.0": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
@@ -665,7 +710,7 @@
           "buildTransitive/Selenium.WebDriver.targets": {}
         }
       },
-      "SpecFlow/3.9.40": {
+      "SpecFlow/3.9.74": {
         "type": "package",
         "dependencies": {
           "BoDi": "1.5.0",
@@ -1809,6 +1854,22 @@
         "tools/_._"
       ]
     },
+    "Cucumber.Messages/21.0.1": {
+      "sha512": "LLiXf+szR4rK3b5SPp3K8e0yGDL///LMTvTygfIQqzgV1NU4DesJ1/vrMbN6TmtzSLJDD6IXFQ9iuzY1whIQeg==",
+      "type": "package",
+      "path": "cucumber.messages/21.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "cucumber-mark-green-128.png",
+        "cucumber.messages.21.0.1.nupkg.sha512",
+        "cucumber.messages.nuspec",
+        "lib/net45/Cucumber.Messages.dll",
+        "lib/net45/Cucumber.Messages.xml",
+        "lib/netstandard2.0/Cucumber.Messages.dll",
+        "lib/netstandard2.0/Cucumber.Messages.xml"
+      ]
+    },
     "FluentAssertions/6.2.0": {
       "sha512": "5YOZLB0Tay1bw+wEYZTAZlPThQ/Yntk1HSPJYluMd5PW/Xg9E8I1mRC03AKRsnuANBR0kYaHq0NX1fg7RgrGNA==",
       "type": "package",
@@ -1836,20 +1897,45 @@
         "lib/netstandard2.1/FluentAssertions.xml"
       ]
     },
-    "Gherkin/19.0.3": {
-      "sha512": "kq9feqMojMj9aABrHb/ABEPaH2Y4dSclseSahAru6qxCeqVQNLLTgw/6vZMauzI1yBUL2fz03ub5yEd5btLfvg==",
+    "Gherkin/27.0.0": {
+      "sha512": "nIEmeK1iJ69l/c1wttIuNnVi1lgZ3FyJXTVhzVPtzdfn/zqf2vZVEk8tE2P09O1SHTp3xZ5kvDxk9sM++EsyhQ==",
       "type": "package",
-      "path": "gherkin/19.0.3",
+      "path": "gherkin/27.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "cucumber-mark-green-128.png",
-        "gherkin.19.0.3.nupkg.sha512",
+        "gherkin.27.0.0.nupkg.sha512",
         "gherkin.nuspec",
-        "lib/net45/Gherkin.dll",
-        "lib/net45/Gherkin.xml",
+        "lib/net462/Gherkin.dll",
+        "lib/net462/Gherkin.xml",
+        "lib/net6.0/Gherkin.dll",
+        "lib/net6.0/Gherkin.xml",
         "lib/netstandard2.0/Gherkin.dll",
         "lib/netstandard2.0/Gherkin.xml"
+      ]
+    },
+    "Google.Protobuf/3.21.12": {
+      "sha512": "1TXWxQy0PDDM1NC/LojlX4YVh7NhOvvyriCfERzeUVTp0XNXv8mo/AyWxDYCvMQ9xRZHUVdWoE4/B8ridP8Btg==",
+      "type": "package",
+      "path": "google.protobuf/3.21.12",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "google.protobuf.3.21.12.nupkg.sha512",
+        "google.protobuf.nuspec",
+        "lib/net45/Google.Protobuf.dll",
+        "lib/net45/Google.Protobuf.pdb",
+        "lib/net45/Google.Protobuf.xml",
+        "lib/net5.0/Google.Protobuf.dll",
+        "lib/net5.0/Google.Protobuf.pdb",
+        "lib/net5.0/Google.Protobuf.xml",
+        "lib/netstandard1.1/Google.Protobuf.dll",
+        "lib/netstandard1.1/Google.Protobuf.pdb",
+        "lib/netstandard1.1/Google.Protobuf.xml",
+        "lib/netstandard2.0/Google.Protobuf.dll",
+        "lib/netstandard2.0/Google.Protobuf.pdb",
+        "lib/netstandard2.0/Google.Protobuf.xml"
       ]
     },
     "Microsoft.CodeCoverage/17.0.0": {
@@ -2963,10 +3049,24 @@
         "runtimes/ubuntu.16.10-x64/native/System.Security.Cryptography.Native.OpenSsl.so"
       ]
     },
-    "Selenium.WebDriver/4.14.1": {
-      "sha512": "9gmtnYWDyscnVPdDZ1dMI8SikKLcrsS+GNweZVKMWxcUsagHOdQnX1yAA22KeTWbRubwp5Vw/E6NF/6drzaTbA==",
+    "Selenium.Support/4.14.0": {
+      "sha512": "Ix4QvIsavMH5O0+hwQ1eow9a/KxCLvPyQTigLLUU0UP7GVUXG4K4uzIIUfTsvqBcc9eW3MMffRz8d72iHodAgA==",
       "type": "package",
-      "path": "selenium.webdriver/4.14.1",
+      "path": "selenium.support/4.14.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "images/icon.png",
+        "lib/netstandard2.0/WebDriver.Support.dll",
+        "lib/netstandard2.0/WebDriver.Support.xml",
+        "selenium.support.4.14.0.nupkg.sha512",
+        "selenium.support.nuspec"
+      ]
+    },
+    "Selenium.WebDriver/4.14.0": {
+      "sha512": "TQ1JCHdxuac9l4r7yehgvt+5tj6kY5RSfi3RhkEPi/uCp9g/HW1J8CBOOzAu8p5T0ERJbNrGEqYOJu13leZI9Q==",
+      "type": "package",
+      "path": "selenium.webdriver/4.14.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2978,14 +3078,14 @@
         "manager/linux/selenium-manager",
         "manager/macos/selenium-manager",
         "manager/windows/selenium-manager.exe",
-        "selenium.webdriver.4.14.1.nupkg.sha512",
+        "selenium.webdriver.4.14.0.nupkg.sha512",
         "selenium.webdriver.nuspec"
       ]
     },
-    "SpecFlow/3.9.40": {
-      "sha512": "ru7twstJSKrTv3XfcxyttzrdZ/FvXOF5cYN/x/2js755wVk1zpSPUPa/ml3lSZmPNkS5OAOuSt1JLEa5hhDhdw==",
+    "SpecFlow/3.9.74": {
+      "sha512": "n6kcg9ZeQWxqJFoT23SsFT89U1QQNwvcN9pAX5alB6ZPr6K0p5D5nGIJ1PZsSaFaRFutiwQ+DicmxBCPAZVYIA==",
       "type": "package",
-      "path": "specflow/3.9.40",
+      "path": "specflow/3.9.74",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3004,7 +3104,7 @@
         "lib/netstandard2.0/TechTalk.SpecFlow.dll",
         "lib/netstandard2.0/TechTalk.SpecFlow.pdb",
         "lib/netstandard2.0/TechTalk.SpecFlow.xml",
-        "specflow.3.9.40.nupkg.sha512",
+        "specflow.3.9.74.nupkg.sha512",
         "specflow.nuspec"
       ]
     },
@@ -6036,37 +6136,39 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Cucumber.Messages >= 21.0.1",
       "FluentAssertions >= 6.2.0",
+      "Gherkin >= 27.0.0",
       "Microsoft.NET.Test.Sdk >= 17.0.0",
       "NUnit3TestAdapter >= 4.1.0",
       "RestSharp >= 110.2.0",
-      "Selenium.WebDriver >= 4.14.1",
+      "Selenium.Support >= 4.14.0",
+      "Selenium.WebDriver >= 4.14.0",
+      "SpecFlow >= 3.9.74",
       "SpecFlow.NUnit >= 3.9.40",
       "SpecFlow.Plus.LivingDocPlugin >= 3.9.57",
       "nunit >= 3.13.2"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\acer\\.nuget\\packages\\": {}
+    "/Users/tushardhage/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\acer\\source\\repos\\PageObjectModel_Specflow\\PageObjectModel_Specflow\\PageObjectModel_Specflow.csproj",
+      "projectUniqueName": "/Users/tushardhage/Desktop/SpecflowBDD-1/PageObjectModel_Specflow.csproj",
       "projectName": "PageObjectModel_Specflow",
-      "projectPath": "C:\\Users\\acer\\source\\repos\\PageObjectModel_Specflow\\PageObjectModel_Specflow\\PageObjectModel_Specflow.csproj",
-      "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\acer\\source\\repos\\PageObjectModel_Specflow\\PageObjectModel_Specflow\\obj\\",
+      "projectPath": "/Users/tushardhage/Desktop/SpecflowBDD-1/PageObjectModel_Specflow.csproj",
+      "packagesPath": "/Users/tushardhage/.nuget/packages/",
+      "outputPath": "/Users/tushardhage/Desktop/SpecflowBDD-1/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/tushardhage/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -6085,9 +6187,17 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Cucumber.Messages": {
+            "target": "Package",
+            "version": "[21.0.1, )"
+          },
           "FluentAssertions": {
             "target": "Package",
             "version": "[6.2.0, )"
+          },
+          "Gherkin": {
+            "target": "Package",
+            "version": "[27.0.0, )"
           },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
@@ -6101,9 +6211,17 @@
             "target": "Package",
             "version": "[110.2.0, )"
           },
+          "Selenium.Support": {
+            "target": "Package",
+            "version": "[4.14.0, )"
+          },
           "Selenium.WebDriver": {
             "target": "Package",
-            "version": "[4.14.1, )"
+            "version": "[4.14.0, )"
+          },
+          "SpecFlow": {
+            "target": "Package",
+            "version": "[3.9.74, )"
           },
           "SpecFlow.NUnit": {
             "target": "Package",
@@ -6134,8 +6252,30 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.310/RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: SpecFlow.NUnit 3.9.40 requires SpecFlow (= 3.9.40) but version SpecFlow 3.9.74 was resolved.",
+      "libraryId": "SpecFlow",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: SpecFlow.Tools.MsBuild.Generation 3.9.40 requires SpecFlow (= 3.9.40) but version SpecFlow 3.9.74 was resolved.",
+      "libraryId": "SpecFlow",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }
