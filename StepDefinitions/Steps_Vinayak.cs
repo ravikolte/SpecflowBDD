@@ -201,7 +201,5 @@ namespace PageObjectModel_Specflow.StepDefinitions
         {
             OHRMPage.click_currentpast();
         }
-
-
     }
 }
