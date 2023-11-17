@@ -1,8 +1,5 @@
 using NUnit.Framework;
 using OpenQA.Selenium;
-using OpenQA.Selenium.DevTools.V116.FedCm;
-using System;
-using OpenQA.Selenium.Support.UI;
 using OpenQA.Selenium.Interactions;
 using PageObjectModel_Specflow.ConstantHelpers;
 
@@ -56,7 +53,7 @@ namespace PageObjectModel_Specflow.Pages
         public static By jobtitle = By.XPath("(//input[@class='oxd-input oxd-input--active'])[2]");
         public static By jobDescription = By.XPath("//textarea[@placeholder='Type description here']");
         public static By addNote = By.XPath("//textarea[@placeholder='Add note']");
-        public static By jobTitle = By.XPath("(//li)[16]");
+        public static By jobTitle = By.XPath("//a[normalize-space()='Job Titles']");
         public static By jobTitleCreated = By.XPath("//div[contains(text(),'QA Automation')]");
         public static By jobMenu = By.XPath("//span[normalize-space()='Job']");
         public static By searchJob = By.XPath("//div[normalize-space()='QA Automation']");
@@ -322,7 +319,7 @@ namespace PageObjectModel_Specflow.Pages
             IJavaScriptExecutor js = (IJavaScriptExecutor)driver;
 
             bool textFound = false;
-            while (!textFound)
+            if (!textFound)
             {
 
                 // Check if the text is present in the page source.
@@ -330,8 +327,13 @@ namespace PageObjectModel_Specflow.Pages
                 {
                     js.ExecuteScript("window.scrollBy(0, 1000);");
                     Thread.Sleep(500);
-                    break;
                 }
+                else{
+                    Console.WriteLine("Job is not listed");
+                }
+            }
+            else{
+                Console.WriteLine("Job Found no need to scroll");
             }
             try
             {

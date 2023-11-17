@@ -16,7 +16,7 @@ namespace APITesting_Specflow.StepDefinitions
         [Given(@"the user sends a delete request with end point as ""([^""]*)""")]
         public void GivenTheUserSendsADeleteRequestWithEndPointAs(string endpoint)
         {
-            response = restapiHelper.sendgetordeleterestapirequest(endpoint, Method.Delete); 
+            response = restapiHelper.sendgetordeleterestapirequest(endpoint, Method.Delete);
             if (response.StatusCode == System.Net.HttpStatusCode.NoContent)
             {
                 // Handle a successful deletion (status code 204 No Content) here
@@ -33,6 +33,19 @@ namespace APITesting_Specflow.StepDefinitions
 
         [Then(@"the validate the response code for delete request")]
         public void ThenTheValidateTheResponseCodeForDeleteRequest()
+        {
+            int actualStatusCode = (int)response.StatusCode;
+            Assert.AreEqual(204, actualStatusCode);
+        }
+
+        [Given(@"the user wants to delete a user with end point as ""([^""]*)""")]
+        public void GivenTheUserWantsToDeleteAUserWithEndPointAs(string endpoint)
+        {
+            response = restapiHelper.sendgetordeleterestapirequest(endpoint, Method.Delete);
+        }
+
+        [Then(@"the user should get a success response with status code 204")]
+        public void ThenTheUserShouldGetASuccessResponseWithStatusCode()
         {
             int actualStatusCode = (int)response.StatusCode;
             Assert.AreEqual(204, actualStatusCode);
