@@ -10,10 +10,11 @@ namespace APITesting_Specflow.StepDefinitions
     [Binding]
     public class POST_Request_StepDefinitions
     {
- 
+
         private RestResponse response;
 
         RestAPIHelper restapiHelper = new RestAPIHelper();
+         dynamic User;
 
         [Given(@"the user sends a post request with end point as ""([^""]*)""")]
         public void GivenTheUserSendsAPostRequestWithEndPointAs(string endpoint)
@@ -37,7 +38,7 @@ namespace APITesting_Specflow.StepDefinitions
                 name = "ravik",
                 job = "leader"
             };
-            
+
             Assert.AreEqual(201, actualStatusCode);
             var actualResponseModel = JsonConvert.DeserializeObject<RequestModel>(response.Content);
             Console.WriteLine(response.Content);
@@ -47,6 +48,14 @@ namespace APITesting_Specflow.StepDefinitions
 
         }
 
-       
+        [Then(@"I print the created user details")]
+        public void ThenIprintthecreateduserdetails()
+        {
+          //  Console.WriteLine($"Name of new user is {response}");
+            Console.WriteLine($"Name of new user is {User.job}");
+            // Console.WriteLine("Response Body: " + response.Content);
+        }
+
+
     }
 }
