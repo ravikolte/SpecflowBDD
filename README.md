@@ -1,6 +1,6 @@
 # SpecflowBDD - C# (For practice purposes) - 
 
-This project has Web UI test cases, Rest API test cases and GraphQL test cases in a Specflow BDD format.
+This project has Web UI test cases, Rest API test cases and GraphQL test cases in a single framework in a Specflow BDD format.
 
 Pre-requisties -
 Visual Studio should be installed on your system
