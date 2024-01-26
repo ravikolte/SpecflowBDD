@@ -35,8 +35,8 @@ namespace PageObjectModel_Specflow.Features
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "REST API Testing POST", "    In order to verify the functionality of a REST API\n    As a tester\n    I want" +
-                    " to make API requests and validate responses", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "REST API Testing POST", "    In order to verify the functionality of a REST API\r\n    As a tester\r\n    I wa" +
+                    "nt to make API requests and validate responses", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
