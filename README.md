@@ -1,4 +1,4 @@
-# SpecflowBDD - C# (For practice)
+# SpecflowBDD - C# (For practice purposes) - 
 
 This project has Web UI test cases, Rest API test cases and GraphQL test cases in a Specflow BDD format.
 
